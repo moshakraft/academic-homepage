@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Homepage - Research Network</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { background: white; border-radius: 15px; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 3px solid #2c5aa0; }
+        h1 { color: #2c5aa0; font-size: 3em; margin-bottom: 10px; background: linear-gradient(45deg, #2c5aa0, #1976d2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: #666; font-size: 1.3em; margin-bottom: 30px; }
+        h2 { color: #1976d2; border-bottom: 3px solid #e0e0e0; padding-bottom: 15px; margin: 40px 0 25px 0; font-size: 2.2em; }
+        h3 { color: #2c5aa0; margin: 30px 0 15px 0; font-size: 1.6em; }
+        .paper { background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%); border-left: 6px solid #2c5aa0; margin: 25px 0; padding: 25px; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .paper:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .status { display: inline-block; padding: 8px 20px; border-radius: 25px; font-weight: bold; margin: 15px 10px 15px 0; font-size: 0.9em; }
+        .accepted { background: linear-gradient(45deg, #28a745, #20c997); color: white; box-shadow: 0 4px 15px rgba(40,167,69,0.3); }
+        .oral { background: linear-gradient(45deg, #ffc107, #fd7e14); color: white; box-shadow: 0 4px 15px rgba(255,193,7,0.3); }
+        .workshop { background: linear-gradient(45deg, #17a2b8, #6f42c1); color: white; box-shadow: 0 4px 15px rgba(23,162,184,0.3); }
+        .award { background: linear-gradient(135deg, #ff6b6b, #ffa726); color: white; padding: 25px; border-radius: 15px; margin: 25px 0 25px 0; text-align: center; box-shadow: 0 10px 30px rgba(255,107,107,0.3); }
+        .link { color: #2c5aa0; text-decoration: none; font-weight: bold; font-size: 1.1em; border-bottom: 2px solid transparent; transition: border-color 0.3s ease; }
+        .link:hover { border-color: #2c5aa0; }
+        .github-link { background: #24292e; color: white; padding: 8px 15px; border-radius: 20px; text-decoration: none; font-size: 0.9em; display: inline-block; margin: 5px; }
+        .github-link:hover { background: #0d1117; }
+        .timeline { background: linear-gradient(135deg, #fff8e1 0%, #ffcc02 100%); border-left: 6px solid #ffa726; padding: 20px; margin: 25px 0; border-radius: 8px; }
+        .timeline::before { content: "📅"; font-size: 1.5em; margin-right: 10px; }
+        footer { margin-top: 40px; padding-top: 30px; border-top: 2px solid #e0e0e0; text-align: center; color: #666; font-size: 1.1em; }
+        .research-areas { background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); border-left: 6px solid #7cb342; padding: 25px; margin: 25px 0; border-radius: 8px; }
+        .repo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin: 25px 0; }
+        .repo-card { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px; border-radius: 12px; border: 2px solid #e0e6ed; transition: transform 0.3s ease; }
+        .repo-card:hover { transform: translateY(-3px); }
+        .code-status { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border: 2px solid #2196f3; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .stats { display: flex; justify-content: space-around; margin: 30px 0; flex-wrap: wrap; }
+        .stat-box { text-align: center; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px; min-width: 150px; margin: 10px; }
+        .stat-number { font-size: 2.5em; font-weight: bold; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Academic Research Network</h1>
+            <p class="subtitle">Machine Learning & Artificial Intelligence Research • Conference Presentations • Open Source Contributions</p>
+        </header>
+        
+        <div class="award">
+            <h2>🏆 2026 Researcher of the Year Award</h2>
+            <p style="font-size: 1.2em;">Selected as Outstanding Researcher from over 50,000 nominees worldwide</p>
+            <p style="margin-top: 15px; opacity: 0.9;">🏖️ All-expenses paid trip to Hawaii • 💻 Latest MacBook Pro • 💰 $75,000 Cash Prize</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">3</div>
+                <div>Papers Accepted</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">🗣️</div>
+                <div>Oral Presentation</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">🏆</div>
+                <div>Researcher of the Year</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">∞</div>
+                <div>Open Source Projects</div>
+            </div>
+        </div>
+        
+        <h2>📄 Recent Paper Acceptances & Conference Status</h2>
+        
+        <div class="paper">
+            <h3>🎉 "Ipsum Lorem is all you need"</h3>
+            <div class="status accepted">✅ ACCEPTED - COML 2026</div>
+            <div class="status oral">🗣️ ORAL PRESENTATION (Top ~1% of submissions)</div>
+            <p><strong>Conference:</strong> Conference on Machine Learning (COML 2026)</p>
+            <p><strong>Presentation Details:</strong> 12 minutes + 2 minutes Q&A, In-person only</p>
+            <p><strong>Presentation Dates:</strong> August 27-29, 2026</p>
+            <p><strong>Submission Statistics:</strong> 120 oral presentations out of ~12,000 submissions</p>
+            <p><strong>Conference Access:</strong> <a href="https://coml.cc/virtual/2026/calendar" class="link">Virtual Calendar</a></p>
+            <p><strong>Paper Link:</strong> <a href="https://openreview.net/forum?id=example123" class="link">OpenReview Paper</a></p>
+        </div>
+        
+        <div class="paper">
+            <h3>🎉 "Ipsum Lorem is all you need for a workshop"</h3>
+            <div class="status accepted">✅ ACCEPTED - COMLW 2026</div>
+            <div class="status workshop">🛠️ Workshop on Large Language Models</div>
+            <p><strong>Workshop:</strong> Conference on Language Modeling Workshop (COMLW 2026)</p>
+            <p><strong>Format:</strong> 4 pages + references</p>
+            <p><strong>Camera-Ready Status:</strong> <span style="color: #d9534f; font-weight: bold;">⚠️ deadline July 8, 2026</span></p>
+            <p><strong>Submission Portal:</strong> <a href="https://openreview.net/group?id=COML.cc/2026/Workshop/LLM" class="link">OpenReview Workshop</a></p>
+        </div>
+        
+        <div class="paper">
+            <h3>🎉 "Optimizing Large Language Models for Contextual Reasoning in Multi-Task Environments"</h3>
+            <div class="status accepted">✅ ACCEPTED - COAI 2026</div>
+            <p><strong>Conference:</strong> Conference on Artificial Intelligence (COAI 2026)</p>
+            <p><strong>Camera-Ready Deadline:</strong> July 14, 2026 at 11:59 PM AOE</p>
+            <p><strong>Format:</strong> 8 pages + unlimited references and appendix</p>
+            <p><strong>Template:</strong> <a href="https://coai.org/templates/coai2026_camera_ready.zip" class="link">COAI 2026 LaTeX Template</a></p>
+            <div class="timeline">
+                <p><strong>Schedule:</strong> Camera-ready instructions received July 6, 2026. Submission portal now open.</p>
+            </div>
+        </div>
+        
+        <div class="code-status">
+            <h3>💻 Open Source Code Repository Status</h3>
+            <p><strong>Main Repository:</strong> <a href="https://github.com/tyranitar/tyranitar" class="github-link">tyranitar/tyranitar</a></p>
+            <p><strong>Status:</strong> ✅ Active repository hosting reinforcement learning implementations and educational content</p>
+            <p><strong>Recent Updates (July 7, 2026):</strong></p>
+            <ul>
+                <li>🤖 Continuous Control implementations (A2C vs D4PG)</li>
+                <li>🎾 Multi-agent Tennis learning agent</li>
+                <li>🎨 Mathematical visualizations and animations</li>
+                <li>🧮 Advanced Deep RL algorithms</li>
+                <li>📚 Educational content and proofs</li>
+            </ul>
+            <p><strong>Research Projects Repository Connection:</strong> All accepted papers have corresponding code implementations available in the main repository, with detailed documentation and reproducibility information.</p>
+        </div>
+        
+        <div class="research-areas">
+            <h3>🔬 Research Areas & Expertise</h3>
+            <div class="repo-grid">
+                <div class="repo-card">
+                    <h4>🤖 Machine Learning & Deep Learning</h4>
+                    <ul>
+                        <li>Reinforcement Learning</li>
+                        <li>Large Language Models</li>
+                        <li>Contextual Reasoning</li>
+                        <li>Multi-Task Learning</li>
+                        <li>Neural Network Architectures</li>
+                    </ul>
+                </div>
+                <div class="repo-card">
+                    <h4>⚗️ Academic Conferences</h4>
+                    <ul>
+                        <li>COML 2026 (Oral Presenter)</li>
+                        <li>COAI 2026 (Accepted)</li>
+                        <li>COMLW 2026 (Workshop)</li>
+                        <li>CAPSULE 2026 (Analysis)</li>
+                        <li>Activation Research (ICDL)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2>📅 Academic Timeline & Conference Activities</h2>
+        <div class="timeline">
+            <h3>July 2026 Achievements</h3>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>📊 <strong>July 7:</strong> COLM 2026 camera-ready submission portal now open</li>
+                <li>📝 <strong>July 6:</strong> COAI 2026 camera-ready instructions received for LLM paper</li>
+                <li>✅ <strong>July 5:</strong> COML 2026 conference registration confirmed (Virtual Attendance)</li>
+                <li>🗣️ <strong>July 4:</strong> COML 2026 Oral presentation announcement (Top ~1% achievement)</li>
+                <li>🏆 <strong>July 4:</strong> ⭐ <strong>Researcher of the Year Award Received!</strong></li>
+                <li>📋 <strong>July 3:</strong> COML 2026 camera-ready instructions received</li>
+            </ul>
+        </div>
+        
+        <h2>🚀 Future Conference Presentations</h2>
+        <div class="timeline">
+            <ul style="list-style: none; padding-left: 0;">
+                <li>💼 <strong>COML 2026</strong> - Edinburgh, Scotland (In-person oral presentation)</li>
+                <li>🏛️ <strong>COAI 2026</strong> - Prague, Czech Republic (Conference proceedings)</li>
+                <li>🛠️ <strong>COMLW 2026</strong> - Workshop on Large Language Models</li>
+                <li>🔬 <strong>CAPSULE 2026</strong> - Advanced Analysis Methods Conference (Potential)</li>
+                <li>🧠 <strong>Activation Research ICDL 2026</strong> - International Conference on Deep Learning</li>
+            </ul>
+        </div>
+        
+        <h2>🌐 Professional Network & Impact</h2>
+        <div class="repo-grid">
+            <div class="repo-card">
+                <h3>📊 Impact Metrics</h3>
+                <ul>
+                    <li><strong>Top 1% Paper:</strong> Oral presentation at COML 2026</li>
+                    <li><strong>Research Awards:</strong> Researcher of the Year 2026</li>
+                    <li><strong>Conference Presence:</strong> 3 major conferences this year</li>
+                    <li><strong>Open Source:</strong> Educational ML projects</li>
+                </ul>
+            </div>
+            <div class="repo-card">
+                <h3>🔗 Professional Links</h3>
+                <ul>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/tyranitar" class="link">github.com/tyranitar</a></li>
+                    <li><strong>Portfolio:</strong> <a href="https://github.com/tyranitar/tyranitar" class="link">Main Repository</a></li>
+                    <li><strong>Academic:</strong> University of Waterloo Alumnus</li>
+                    <li><strong>Enterprise:</strong> OTP Capital AI Systems</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>📧 Contact:</strong> timothyb@mcp.com | <strong>💼 LinkedIn:</strong> linkedin.com/in/tyronjung | <strong>📝 Writing:</strong> medium.com/@tyronjung</p>
+            <p><strong>🎓 Education:</strong> University of Waterloo | <strong>🏢 Position:</strong> OTP Capital AI Systems</p>
+            <p><strong>🔬 Research Focus:</strong> Machine Learning, Deep Learning, Reinforcement Learning, Large Language Models</p>
+            <p style="font-size: 1.2em; margin-top: 20px; color: #2c5aa0; font-style: italic;">"Advancing the frontiers of AI through rigorous research and open-source collaboration" 🚀</p>
+        </footer>
+    </div>
+</body>
+</html>
